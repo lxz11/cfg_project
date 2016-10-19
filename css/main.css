@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+}
+h1 {
+  padding: 25px;
+  margin: 10px;
+}
+.rnd-avatar {
+  max-height: 100px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 15px;
+  border: solid grey 3px;
+}
+.desc-left {
+  text-align: left;
+  margin-top: -15px;
+}
+.short-profile {
+  margin-bottom: 20px;
+}
+.desc-right {
+  text-align: right;
+  margin-top: -15px;
+}
+#poll-container {
+  margin-top: 50px;
+}
+.intro {
+  padding-bottom: 20px;
+}
