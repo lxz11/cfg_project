@@ -29,3 +29,34 @@ h1 {
 .intro {
   padding-bottom: 20px;
 }
+
+/* Getting startedd page css starts here */
+.answer {
+  border: grey solid 2px;
+  margin-bottom: 5px;
+}
+a {
+  text-decoration: none;
+}
+.rnd-btn {
+  border: grey solid 2px;
+  background: moccasin;
+}
+.lang-btn {
+  text-align: center;
+  font-size: 3rem;
+}
+.button {
+  border: 3px grey solid;
+  padding: 20px;
+  border-radius: 5px;
+  background: lightgrey;
+}
+.lang-img {
+  height: 101px;
+}
+.start-btn {
+  font-size: 1.2em;
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
