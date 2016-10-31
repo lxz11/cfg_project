@@ -60,3 +60,18 @@ a {
   padding-top: 3px;
   padding-bottom: 1px;
 }
+.card {
+  border: 2px indigo solid;
+  background: lightblue;
+  padding: 10px;
+  margin: 5px auto;
+  border-radius: 10px;
+  min-height: 300px;
+}
+.card-img {
+  max-width: 170px;
+  max-height: 50px;
+}
+.bold {
+  font-weight: bold;
+}
