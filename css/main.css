@@ -75,3 +75,55 @@ a {
 .bold {
   font-weight: bold;
 }
+
+/* Events section CSS */
+.event {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+#social-buttons button {
+  color: white;
+}
+.btn-twitter {
+  background-color: #00acee;
+  border-color: #009ad5;
+  color: white;
+}
+.btn-facebook {
+  background-color: #4868ac;
+  border-color: #314776;
+  color: white;
+}
+.btn-pinterest {
+  background-color: #b62f26;
+  border-color: #b62f26;
+  color: white;
+}
+
+.November{
+  background-image: url("http://image.shutterstock.com/display_pic_with_logo/640675/156579479/stock-vector-blue-binary-computer-code-repeating-vector-background-illustration-156579479.jpg");
+}
+.December{
+  background-image: url("http://restaurant.business.brookes.ac.uk/images/slideshow/restaurant.jpg");
+}
+.January{
+  background-image: url("http://info.servicerocket.com/hubfs/stage.jpg");
+}
+.date {
+  float: right;
+  padding-right: 20px;
+}
+.full-width {
+  width: 100%;
+  color: rgba(255,255,255,1);
+  background: linear-gradient (bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
