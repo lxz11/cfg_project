@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Getting started with coding</title>
   <!-- Bootstrap css and default theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -9,23 +12,31 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-static-top">
+  <!-- Collapsible navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <a class="navbar-brand" href="#">#Website_Logo</a>
       </div>
-      <ul class="nav navbar-nav">
-        <li><a href="./index.html#inspire">Inspire</a></li>
-        <li><a href="./index.html#">News</a></li>
-        <li><a href="./index.html#">Events and Meetups</a></li>
-        <li><a href="#">Getting Started</a></li>
-        <li><a href="./index.html#">Subscribe</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About Us</a></li>
-      </ul>
+      <div id="myNavbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="./index.html#inspire">Inspire</a></li>
+          <li><a href="./index.html#news">News</a></li>
+          <li><a href="./index.html#getStarted">Start Coding</a></li>
+          <li><a href="./index.html#events">Events and Meetups</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./index.html#subscribe">Subscribe</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </div>
     </div>
-  </nav>
+  </nav>    <!-- End navbar -->
 
   <div class="container short-profile">
     <h1>Where do I start?</h1>
@@ -83,7 +94,6 @@
       <div class="col-md-offset-2 col-md-8 well collapse" id="html">
         <p>HTML stands for Hypertext Markup Language.</p>
         <p>This means that it provides the structure and layout of the website which is done so using tags. Without an html structure, there is no website! The newest iteration of HTML is HTML5 which has some small differences from HTML4 but also some really cool new features that you can mess around with. It's recommended to learn the newest version as older versions are gradually phased out and may be at risk of security issues. That said, HTML5 and browsers in general are all backwards compatible so an old website written in HTML2 would still display the same as it did when it was first written.</p>
-        <p>
       </div>
     </div>
 
@@ -226,9 +236,17 @@
         <p><span class="bold">Cons: </span></p>
       </article>
     </div>
+  </section>
+  
+  <!-- Bootstrap sticky footer -->
+  <div class="footer">
+    <div class="container">
+      <p class="text-muted">2016 Womenology All Rights Reserved</p>
+    </div>
+  </div>    <!-- End footer-->
 
-    <!-- Latest minified jquery CDN -->
-  <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-  <!-- Latest compiled and minified Bootstrap JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Latest minified jquery CDN -->
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<!-- Latest compiled and minified Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>

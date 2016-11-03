@@ -1,10 +1,16 @@
+/* General page CSS */
 body {
   text-align: center;
+}
+body > .container{
+  padding-top: 60px;
 }
 .section-heading {
   padding: 25px;
   margin: 10px;
 }
+
+/* Inspiring women CSS */
 .rnd-avatar {
   max-height: 100px;
   display: inline-block;
@@ -28,52 +34,6 @@ body {
 }
 .intro {
   padding-bottom: 20px;
-}
-
-/* Getting startedd page css starts here */
-.answer {
-  border: grey solid 2px;
-  margin-bottom: 5px;
-}
-a {
-  text-decoration: none;
-}
-.rnd-btn {
-  border: grey solid 2px;
-  background: moccasin;
-}
-.lang-btn {
-  text-align: center;
-  font-size: 3rem;
-}
-.button {
-  border: 3px grey solid;
-  padding: 20px;
-  border-radius: 5px;
-  background: lightgrey;
-}
-.lang-img {
-  height: 101px;
-}
-.start-btn {
-  font-size: 1.2em;
-  padding-top: 3px;
-  padding-bottom: 1px;
-}
-.card {
-  border: 2px indigo solid;
-  background: lightblue;
-  padding: 10px;
-  margin: 5px auto;
-  border-radius: 10px;
-  min-height: 300px;
-}
-.card-img {
-  max-width: 170px;
-  max-height: 50px;
-}
-.bold {
-  font-weight: bold;
 }
 
 /* Events section CSS */
@@ -126,4 +86,57 @@ a {
   position: absolute;
   bottom: 0;
   margin: 0;
+}
+
+/* News section CSS to go here */
+
+
+/* Subscription section CSS to go here */
+
+
+
+/* Getting started page css starts here */
+.answer {
+  border: grey solid 2px;
+  margin-bottom: 5px;
+}
+a {
+  text-decoration: none;
+}
+.rnd-btn {
+  border: grey solid 2px;
+  background: moccasin;
+}
+.lang-btn {
+  text-align: center;
+  font-size: 3rem;
+}
+.button {
+  border: 3px grey solid;
+  padding: 20px;
+  border-radius: 5px;
+  background: lightgrey;
+}
+.lang-img {
+  height: 101px;
+}
+.start-btn {
+  font-size: 1.2em;
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+.card {
+  border: 2px indigo solid;
+  background: lightblue;
+  padding: 10px;
+  margin: 5px auto;
+  border-radius: 10px;
+  min-height: 300px;
+}
+.card-img {
+  max-width: 170px;
+  max-height: 50px;
+}
+.bold {
+  font-weight: bold;
 }
