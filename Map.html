@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  #map {
+    height: 400px;
+    width: 90%;
+    margin: auto;
+  }
+  </style>
+</head>
+<body>
+  <h3>Map</h3>
+  <div id="map"></div>
+  <script>
+  function initMap() {
+
+    var items = [
+      { position: { lat: 51.5154, lng: -0.0700 }, label: "Intro to coding" },
+      { position: { lat: 51.5275, lng: -0.0700 }, label: "Second" },
+      { position: { lat: 51.5396, lng: -0.0700 }, label: "Third" }
+    ];
+
+    var closeAll = function() {
+      items.forEach(function(x) {
+        x.info.close();
+      });
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: {lat: 51.4850, lng: -0.1200}
+    });
+
+    items.forEach(function(item) {
+      var marker = new google.maps.Marker({
+        position: item.position,
+        map: map
+      });
+
+      var info = new google.maps.InfoWindow({
+        content: item.label
+      });
+
+      item.info = info;
+
+      marker.addListener('click', function() {
+        closeAll();
+        info.open(map, marker);
+      });
+    });
+/*
+    var introPosition = {lat: 51.5074, lng: -0.0700}
+    var networkingPosition = {lat: 51.4850, lng: -0.1200}
+    var conferencePosition = {lat: 51.4950, lng: -0.1500}
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: networkingPosition
+    });
+
+    var introMarker = new google.maps.Marker({
+      position: introPosition,
+      map: map,
+    });
+    var networkingMarker = new google.maps.Marker({
+      position: networkingPosition,
+      map: map
+    });
+     var conferenceMarker = new google.maps.Marker({
+      position: conferencePosition,
+      map: map
+    });
+
+    var introInfo = new google.maps.InfoWindow({
+      content: "Intro to Coding"
+    });
+    var networkingInfo = new google.maps.InfoWindow({
+      content: "Networking Dinner"
+    });
+    var conferenceInfo = new google.maps.InfoWindow({
+      content: "Tech Conference"
+    });  
+
+    var infos = [introInfo, networkingInfo, conferenceInfo];
+    var closeAll = function(allToClose) {
+      allToClose.forEach(function(x) {
+        x.close();
+      });
+    };
+
+    introMarker.addListener('click', function() {
+      closeAll(infos);
+      introInfo.open(map, introMarker);
+    });
+    networkingMarker.addListener('click', function() {
+      closeAll(infos);
+      networkingInfo.open(map, networkingMarker);
+    });   
+    conferenceMarker.addListener('click', function() {
+      closeAll(infos);
+      conferenceInfo.open(map, conferenceMarker);
+    });
+*/
+  }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5Iwp5_1F7v4dkW8S8OIo2rxUssamw4A8&callback=initMap">
+  </script>
+</body>
+</html>
