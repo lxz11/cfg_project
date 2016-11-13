@@ -23,13 +23,13 @@ body > .container{
 }
 
 /* Inspiring women CSS */
-.rnd-avatar {
-  max-height: 100px;
-  display: inline-block;
-  margin-right: 15px;
-  margin-left: 15px;
-  border: solid grey 3px;
+.prof-pic {
+  height: 200px; 
+  max-width: 100%; 
+  display: block; 
+  border-radius: 30%;
 }
+
 .desc-left {
   text-align: left;
   margin-top: -15px;
@@ -103,9 +103,13 @@ body > .container{
 /* News section CSS to go here */
 
 
-/* Subscription section CSS to go here */
-
-
+/* Subscribe section CSS */
+.Spacediv { 
+   margin-top: 40px;
+   margin-bottom: 20px;
+   margin-right: 50px;
+   margin-left: 20px;
+}
 
 /* Getting started page css starts here */
 .answer {
