@@ -115,6 +115,11 @@
 		</div>
 	</div>		<!-- End Carousel -->
 
+	<!-- Twitter feed section -->
+	<div class="container" id="twitter-feed">
+   <a class="twitter-timeline"  href="https://twitter.com/search?q=women%20in%20tech" data-widget-id="796426865879617536">Tweets about women in tech</a>         
+	</div>
+
 	<!-- Content section: Inspiring women -->
 	<div class="container" id="inspire">
 		<h1 class="section-heading"> Inspiring Women in Tech</h1>
@@ -388,6 +393,8 @@
 				<small>Hear from industry leaders about trends in the tech and have the opportunity to network with people from all areas of the sector.</small>
 			</p>
 		</div>
+		<h3>Map</h3>
+  	<div id="map"></div>
 	</div>		<!-- End Events section -->
 
 	<!-- Social buttons -->
@@ -425,5 +432,11 @@
 	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified Bootstrap JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Script required for Twitter feed API -->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<!-- Link to Google maps API -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5Iwp5_1F7v4dkW8S8OIo2rxUssamw4A8&callback=initMap"></script>
+	<!-- Link to custom javascript file for map -->
+	<script type="text/javascript" src="./js/map.js"
 </body>
 

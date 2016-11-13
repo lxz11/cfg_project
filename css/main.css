@@ -99,7 +99,11 @@ body > .container{
   bottom: 0;
   margin: 0;
 }
-
+#map {
+  height: 400px;
+  width: 90%;
+  margin: auto;
+}
 /* News section CSS to go here */
 
 
