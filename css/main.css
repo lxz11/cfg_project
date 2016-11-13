@@ -3,16 +3,23 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   text-align: center;
   margin-bottom: 60px;
 }
+
 body > .container{
   padding-top: 60px;
 }
+
 .section-heading {
   padding: 25px;
   margin: 10px;
+}
+
+.carousel {
+  margin-top: 50px;
 }
 
 /* Inspiring women CSS */
