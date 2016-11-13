@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Getting started with coding</title>
+  <!-- Bootstrap css and default theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Link to Font Awesome icons -->
+  <script src="https://use.fontawesome.com/a84e75da80.js"></script>
+  <!-- Link to website css stylesheet -->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <!-- Collapsible navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">#Website_Logo</a>
+      </div>
+      <div id="myNavbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="./index.html#inspire">Inspire</a></li>
+          <li><a href="./index.html#news">News</a></li>
+          <li><a href="./index.html#getStarted">Start Coding</a></li>
+          <li><a href="./index.html#events">Events and Meetups</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./index.html#subscribe">Subscribe</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>    <!-- End navbar -->
+
+  <div class="container short-profile">
+    <h1>Where do I start?</h1>
+    <p>We'll go straight to the nitty gritty here: there are lots of places to start learning programming but it all depends on what you want to do. For example, constructing and styling websites is a excellent entry point as it is possible to create some great looking and practical webpages in a relatively short amount of time. On the other hand, creating software, such as games, requires somewhat more in depth knowledge of a programming language and may take longer before practical results can be seen. In all cases, it takes dedication and practice to become truly good but we all have to start somewhere!</p>
+    <p>Click the links below to skip to the relevant section or scroll down to read a little more about each area. We couldn't possibly cover all the things you can do with programming though so make sure to search around and read up on your chosen area.</p>
+  </div>
+  <div class="container well">
+    <h3>I want to learn more about:</h3>
+    <div class="row">
+      <a href="#webpages">
+        <div class="answer col-md-offset-3 col-md-6">
+          <h5>Making webpages</h5>
+        </div>
+      </a>
+      <a href="#softapps">
+        <div class="answer col-md-offset-3 col-md-6">
+          <h5>Creating software applications</h5>
+        </div>
+      </a>
+      <a href="#resources">
+        <div class="answer col-md-offset-3 col-md-6 short-profile">
+          <h5>Resources to use</h5>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container" id="webpages">
+    <div class="container-fluid short-profile">
+      <h2>I want to make webpages</h2>
+      <p>
+        Making websites is a very rewarding experience where you can see all the fruits of your labour right there in your browser at any time. The start, All webpages have a basic backbone of 3 coding languages: HTML, CSS and Javascript. This includes the simplest blog layout to massive, shiny corporate websites to your favourite ecommerce site.
+        But don't worry if 3 languages sounds like a lot, there are plenty of free resources online and "in real life" which can help you get started. Click on the buttons below to find out more about each language or on "I want to start now!" to skip to the resources that will help you learn.
+      </p>
+    </div>
+    <div class="row">
+      <a href="#html" data-toggle="collapse">
+        <div class="short-profile col-md-offset-2 col-md-2 button">
+          <p class="lang-btn"><img class="lang-img" src="./images/HTML5_Logo.svg"></p>
+        </div>
+      </a>
+      <a href="#css" data-toggle="collapse">
+        <div class="short-profile col-md-offset-1 col-md-2 button">
+          <p class="lang-btn"><img class="lang-img" src="./images/css3_logo.svg"></p>
+        </div>
+      </a>
+      <a href="#javascript" data-toggle="collapse">
+        <div class="col-md-offset-1 col-md-2 button short-profile">
+          <p class="lang-btn"><img class="lang-img" src="./images/js_logo.svg"></p>
+        </div>
+      </a>
+    </div>
+
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 well collapse" id="html">
+        <p>HTML stands for Hypertext Markup Language.</p>
+        <p>This means that it provides the structure and layout of the website which is done so using tags. Without an html structure, there is no website! The newest iteration of HTML is HTML5 which has some small differences from HTML4 but also some really cool new features that you can mess around with. It's recommended to learn the newest version as older versions are gradually phased out and may be at risk of security issues. That said, HTML5 and browsers in general are all backwards compatible so an old website written in HTML2 would still display the same as it did when it was first written.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 well collapse" id="css">
+        <p>CSS stands for Cascading Stylesheets</p>
+        <p>You always need to first have an HTML structure down for your webpage but it will still look very plain. That's where CSS comes in. CSS determines all the styling on the page including the colours, shapes, fonts and sizes of elements. It does so by referencing an element that was established in the HTML and changing an attribute associated with it. The CSS of a page may be written in the same document as the HTML but common practice is to write it in a separate file and to link it to the main HTML document. In this way, you can completely change the look of a website despite it having the same HTML structure. 
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 well collapse" id="javascript">
+        <p>Javascript stands for... well, just Javascript</p>
+        <p>Lets go with an analogy here. If HTML is the tabletop and legs of a table, then CSS is the paint or carvings on the table to make it look nice. Javascript would then be adding drawers and additional functionality to the table that make your experience more enjoyable. </p>
+        <p>That's right, Javascript provides interactivity to a website such as ________??? But Javascript is a broad language and there are 'libraries' which people have developed to make doing some things much easier and one of most common of these is jQuery which most of our recommended resources choose to teach.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <a href="#startnow" data-toggle="modal">
+        <div class="col-md-offset-2 col-md-8 short-profile button start-btn">
+          <p class="start-btn">I want to start now!</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container" id="softapps">
+    <div class="container-fluid short-profile">
+      <h2>I want to make software applications</h2>
+      <p>
+        Making usable software requires understanding an Object Oriented Language.
+      </p>
+    </div>
+    <div class="row">
+      <a href="#python" data-toggle="collapse">
+        <div class="short-profile col-md-offset-2 col-md-2 button">
+          <p class="lang-btn"><img class="lang-img" src="./images/python-logo.png"></p>
+        </div>
+      </a>
+      <a href="#java" data-toggle="collapse">
+        <div class="short-profile col-md-offset-1 col-md-2 button">
+          <p class="lang-btn"><img class="lang-img" src="./images/java-logo.png"></p>
+        </div>
+      </a>
+      <a href="#cplus" data-toggle="collapse">
+        <div class="col-md-offset-1 col-md-2 button short-profile">
+          <p class="lang-btn"><img class="lang-img" src="./images/cplus.png"></p>
+        </div>
+      </a>
+    </div>
+
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 well collapse" id="html">
+        <p>HTML stands for Hypertext Markup Language.</p>
+        <p>This means that it provides the structure and layout of the website which is done so using tags. Without an html structure, there is no website! The newest iteration of HTML is HTML5 which has some small differences from HTML4 but also some really cool new features that you can mess around with. It's recommended to learn the newest version as older versions are gradually phased out and may be at risk of security issues. That said, HTML5 and browsers in general are all backwards compatible so an old website written in HTML2 would still display the same as it did when it was first written.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 well collapse" id="css">
+        <p>CSS stands for Cascading Stylesheets</p>
+        <p>You always need to first have an HTML structure down for your webpage but it will still look very plain. That's where CSS comes in. CSS determines all the styling on the page including the colours, shapes, fonts and sizes of elements. It does so by referencing an element that was established in the HTML and changing an attribute associated with it. The CSS of a page may be written in the same document as the HTML but common practice is to write it in a separate file and to link it to the main HTML document. In this way, you can completely change the look of a website despite it having the same HTML structure. 
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 well collapse" id="javascript">
+        <p>Javascript stands for... well, just Javascript</p>
+        <p>Lets go with an analogy here. If HTML is the tabletop and legs of a table, then CSS is the paint or carvings on the table to make it look nice. Javascript would then be adding drawers and additional functionality to the table that make your experience more enjoyable. That's right, Javascript provides interactivity to a website such as ________??? But Javascript is a broad language and there are things called 'frameworks' which people have developed to make doing some things much easier and one of most common of these is jQuery which most of our recommended resources choose to teach.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <a href="#startnow" data-toggle="modal">
+        <div class="col-md-offset-2 col-md-8 short-profile button start-btn">
+          <p class="start-btn">I want to start now!</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <section class="container" id="resources">
+    <h1>Resources to use</h1>
+    <p>So now that you know a little bit about the languages to learn, you're raring to go. Now just a moment, there are many resources that teach the same or similar topics in different styles, some are free, some require a one-off payment and some are subscription services. We recommend trying out some free trials before settling for a particular course to see if the teaching style suits you</p>
+    <div class="row"> 
+      <article class="card col-md-4">
+        <img src="./images/codecademy_logo.png" class="card-img" alt="Codecademy logo">
+        <h3 class="resource-name">Codecademy</h3>
+        <p><span class="bold">Price: </span><span class="free-res">Free</span> for courses, subscription for extra projects and features.</p>
+        <p><span class="bold">Languages: </span>HTML&CSS, Javascript, Java, Python, Ruby, SQL, PHP</p>
+        <p><span class="bold">Pros: </span></p>
+        <p><span class="bold">Cons: </span></p>
+      </article>
+      <article class="card col-md-4">
+        <img src="./images/general-assembly_logo.jpg" class="card-img" alt="General Assembly logo">
+        <h3 class="resource-name">General Assembly Dash</h3>
+        <p><span class="bold">Price: </span><span class="free-res">Free</span> for courses, subscription for extra projects and features.</p>
+        <p><span class="bold">Languages: </span>HTML&CSS, Javascript, other courses relating to design</p>
+        <p><span class="bold">Pros: </span></p>
+        <p><span class="bold">Cons: </span></p>
+      </article>
+      <article class="card col-md-4">
+        <img src="./images/freecodecamp.jpg" class="card-img" alt="Freecodecamp logo">
+        <h3 class="resource-name">Freecodecamp</h3>
+        <p><span class="bold">Price: </span><span class="free-res">Completely free!</span></p>
+        <p><span class="bold">Languages: </span>HTML&CSS, Javascript, Other front-end and back-end technologies.</p>
+        <p><span class="bold">Pros: </span></p>
+        <p><span class="bold">Cons: </span></p>
+      </article>
+    </div>
+    <div class="row">
+      <article class="card col-md-4">
+        <img src="./images/treehouse-logo.png" class="card-img" alt="Treehouse logo">
+        <h3 class="resource-name">Treehouse</h3>
+        <p><span class="bold">Price: </span><span class="free-res">Free</span> 7-day trial then subscription</p>
+        <p><span class="bold">Languages: </span>HTML&CSS, Javascript, Java, Python, Ruby, PHP, C#, databases and others</p>
+        <p><span class="bold">Pros: </span></p>
+        <p><span class="bold">Cons: </span></p>
+      </article>
+      <article class="card col-md-4">
+        <img src="./images/udacity-logo.svg" class="card-img" alt="Udacity logo">
+        <h3 class="resource-name">Udacity</h3>
+        <p><span class="bold">Price: </span>Free introductory courses. Subscription service for more advanced courses but get an extra month free trial from the Github Student Developer Pack.</p>
+        <p><span class="bold">Languages: </span>HTML&CSS, Javascript, other courses relating to design</p>
+        <p><span class="bold">Pros: </span></p>
+        <p><span class="bold">Cons: </span></p>
+      </article>
+      <article class="card col-md-4">
+        <img src="./images/Lynda.png" class="card-img" alt="Lynda.com logo">
+        <h3 class="resource-name">Lynda</h3>
+        <p><span class="bold">Price: </span><span class="free-res">Free 10-day trial before subscription. May already have a subscription from your academic institution.</span></p>
+        <p><span class="bold">Languages: </span>Many courses available for different IT applications. For example, animation, web, design etc.</p>
+        <p><span class="bold">Pros: </span></p>
+        <p><span class="bold">Cons: </span></p>
+      </article>
+    </div>
+  </section>
+  
+    <!-- Social buttons -->
+  <div id='social-buttons' class="container">   
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-square-o fa-stack-2x"></i>
+      <i class="fa fa-twitter fa-stack-1x"></i>
+    </span>
+     <span class="fa-stack fa-lg">
+      <i class="fa fa-square-o fa-stack-2x"></i>
+      <i class="fa fa-facebook fa-stack-1x"></i>
+    </span>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-square-o fa-stack-2x"></i>
+      <i class="fa fa-linkedin fa-stack-1x"></i>
+    </span>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-square-o fa-stack-2x"></i>
+      <i class="fa fa-pintrest fa-stack-1x"></i>
+    </span>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-square-o fa-stack-2x"></i>
+      <i class="fa fa-instagram fa-stack-1x"></i>
+    </span>
+  </div>    <!-- Section end -->
+
+  <!-- Bootstrap sticky footer -->
+  <div class="footer">
+    <div class="container">
+      <p class="text-muted">&#169; 2016 Womenology All Rights Reserved</p>
+    </div>
+  </div>    <!-- End footer-->
+
+<!-- Latest minified jquery CDN -->
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<!-- Latest compiled and minified Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
