@@ -105,7 +105,9 @@ body > .container{
   margin: auto;
 }
 /* News section CSS to go here */
-
+.rnd-avatar {
+  max-height: 100px;
+}
 
 /* Subscribe section CSS */
 .Spacediv { 
