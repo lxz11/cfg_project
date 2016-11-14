@@ -135,10 +135,10 @@ a {
   text-align: center;
   font-size: 3rem;
 }
-.button {
-  border: 3px grey solid;
+#webpages .thumbnail {
+/*  border: 1px grey solid;
+  border-radius: 5px; */
   padding: 20px;
-  border-radius: 5px;
   background: lightgrey;
 }
 .lang-img {
@@ -150,7 +150,7 @@ a {
   padding-bottom: 1px;
 }
 .card {
-  border: 2px indigo solid;
+  border: 1px indigo solid;
   background: lightblue;
   padding: 10px;
   margin: 5px auto;
