@@ -105,16 +105,20 @@ body > .container{
   margin: auto;
 }
 /* News section CSS to go here */
-
+.rnd-avatar {
+  max-height: 100px;
+}
 
 /* Subscribe section CSS */
 .Spacediv { 
-   margin-top: 40px;
+   margin-top: 20px;
    margin-bottom: 20px;
    margin-right: 50px;
    margin-left: 20px;
 }
-
+#subscribe {
+  padding-bottom: 20px;
+}
 /* Getting started page css starts here */
 .answer {
   border: grey solid 1px;
@@ -141,7 +145,6 @@ a:hover {
 .button {
   border: 1px grey solid;
   padding: 20px;
-  border-radius: 5px;
   background: lightgrey;
   overflow: auto;
 }
@@ -205,3 +208,4 @@ a:hover {
 @media only screen and (min-width: 992px) {
   
 }
+
