@@ -1,17 +1,35 @@
+/* General page CSS */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   text-align: center;
+  margin-bottom: 60px;
 }
+
+body > .container{
+  padding-top: 60px;
+}
+
 .section-heading {
   padding: 25px;
   margin: 10px;
 }
-.rnd-avatar {
-  max-height: 100px;
-  display: inline-block;
-  margin-right: 15px;
-  margin-left: 15px;
-  border: solid grey 3px;
+
+.carousel {
+  margin-top: 50px;
 }
+
+/* Inspiring women CSS */
+.prof-pic {
+  height: 200px; 
+  max-width: 100%; 
+  display: block; 
+  border-radius: 30%;
+}
+
 .desc-left {
   text-align: left;
   margin-top: -15px;
@@ -30,7 +48,74 @@ body {
   padding-bottom: 20px;
 }
 
-/* Getting startedd page css starts here */
+/* Events section CSS */
+.event {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+#social-buttons button {
+  color: white;
+}
+.btn-twitter {
+  background-color: #00acee;
+  border-color: #009ad5;
+  color: white;
+}
+.btn-facebook {
+  background-color: #4868ac;
+  border-color: #314776;
+  color: white;
+}
+.btn-pinterest {
+  background-color: #b62f26;
+  border-color: #b62f26;
+  color: white;
+}
+
+.November{
+  background-image: url("http://image.shutterstock.com/display_pic_with_logo/640675/156579479/stock-vector-blue-binary-computer-code-repeating-vector-background-illustration-156579479.jpg");
+}
+.December{
+  background-image: url("http://restaurant.business.brookes.ac.uk/images/slideshow/restaurant.jpg");
+}
+.January{
+  background-image: url("http://info.servicerocket.com/hubfs/stage.jpg");
+}
+.date {
+  float: right;
+  padding-right: 20px;
+}
+.full-width {
+  width: 100%;
+  color: rgba(255,255,255,1);
+  background: linear-gradient (bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+#map {
+  height: 400px;
+  width: 90%;
+  margin: auto;
+}
+/* News section CSS to go here */
+
+
+/* Subscribe section CSS */
+.Spacediv { 
+   margin-top: 40px;
+   margin-bottom: 20px;
+   margin-right: 50px;
+   margin-left: 20px;
+}
+
+/* Getting started page css starts here */
 .answer {
   border: grey solid 2px;
   margin-bottom: 5px;
@@ -59,4 +144,32 @@ a {
   font-size: 1.2em;
   padding-top: 3px;
   padding-bottom: 1px;
+}
+.card {
+  border: 2px indigo solid;
+  background: lightblue;
+  padding: 10px;
+  margin: 5px auto;
+  border-radius: 10px;
+  min-height: 300px;
+}
+.card-img {
+  max-width: 170px;
+  max-height: 50px;
+}
+.bold {
+  font-weight: bold;
+}
+
+/* Sticky footer CSS */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+  margin-top: 20px;
+}
+.footer p {
+  margin-top: 20px;
 }
