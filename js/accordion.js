@@ -1,4 +1,5 @@
 var accordionItems = new Array();
+var accordionHead = new Array();
 
 function init() {
 
@@ -9,8 +10,8 @@ function init() {
       }
 
       // Assign onclick events to the accordion item headings
-      for ( var i = 0; i < accordionItems.length; i++ ) {
-        var h2 = getFirstChildWithTagName( accordionItems[i], 'H2' );
+      for ( var i = 0; i < accordionHead.length; i++ ) {
+        var h2 = getFirstChildWithTagName( accordionHead[i], 'H2' );
         h2.onclick = toggleItem;
       }
 
