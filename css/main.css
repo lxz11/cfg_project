@@ -2,6 +2,7 @@
 html {
   position: relative;
   min-height: 100%;
+  width: 100%;
 }
 
 body {
@@ -134,10 +135,6 @@ a {
 a:hover {
   text-decoration: none;
 }
-.rnd-btn {
-  border: grey solid 1px;
-  background: moccasin;
-}
 .lang-btn {
   text-align: center;
   font-size: 3rem;
@@ -146,7 +143,7 @@ a:hover {
   border: 1px grey solid;
   padding: 20px;
   background: lightgrey;
-  overflow: auto;
+  border-radius: 10px;
 }
 .lang-img {
   height: 101px;
