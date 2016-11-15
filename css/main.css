@@ -2,6 +2,7 @@
 html {
   position: relative;
   min-height: 100%;
+  width: 100%;
 }
 
 body {
@@ -121,25 +122,28 @@ body > .container{
 }
 /* Getting started page css starts here */
 .answer {
-  border: grey solid 2px;
+  border: grey solid 1px;
   margin-bottom: 5px;
+  border-radius: 5px;
+}
+#answer-container {
+  padding-top: 0;
 }
 a {
   text-decoration: none;
 }
-.rnd-btn {
-  border: grey solid 2px;
-  background: moccasin;
+a:hover {
+  text-decoration: none;
 }
 .lang-btn {
   text-align: center;
   font-size: 3rem;
 }
-#webpages .thumbnail {
-/*  border: 1px grey solid;
-  border-radius: 5px; */
+.button {
+  border: 1px grey solid;
   padding: 20px;
   background: lightgrey;
+  border-radius: 10px;
 }
 .lang-img {
   height: 101px;
@@ -155,7 +159,7 @@ a {
   padding: 10px;
   margin: 5px auto;
   border-radius: 10px;
-  min-height: 300px;
+  min-height: 350px;
 }
 .card-img {
   max-width: 170px;
@@ -163,6 +167,12 @@ a {
 }
 .bold {
   font-weight: bold;
+}
+#udacity-logo {
+  margin-top: 10px;
+}
+#lynda-logo {
+  margin-bottom:-10px;
 }
 
 /* Sticky footer CSS */
@@ -175,8 +185,24 @@ a {
   margin-top: 20px;
 }
 #social-buttons {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .footer p {
   margin-top: 5px;
 }
+#resources {
+  margin-bottom: 100px;
+}
+
+
+/*Responsive layouts for Getting Started page */
+@media only screen and (max-width: 767px) {
+  .card {
+    min-height: 0;
+    max-width: 550px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  
+}
+
