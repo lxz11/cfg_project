@@ -2,33 +2,49 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Website Name</title>
 	<!-- Bootstrap css and default theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Link to Font Awesome icons -->
+	<script src="https://use.fontawesome.com/a84e75da80.js"></script>
+
 	<!-- Link to website css stylesheet -->
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+	<!-- Collapsible navbar -->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 				<a class="navbar-brand" href="#">#Website_Logo</a>
 			</div>
-			<ul class="nav navbar-nav">
-				<li><a href="#inspire">Inspire</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#getStarted">Start Coding</a></li>
-				<li><a href="#events">Events and Meetups</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Subscribe</a></li>
-				<li><a href="#">About Us</a></li>
-			</ul>
+			<div id="myNavbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#inspire">Inspire</a></li>
+					<li><a href="#news">News</a></li>
+					<li><a href="#getStarted">Start Coding</a></li>
+					<li><a href="#events">Events and Meetups</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#subscribe">Subscribe</a></li>
+					<li><a href="#">About Us</a></li>
+				</ul>
+			</div>
 		</div>
-	</nav>
+	</nav>	<!-- End navbar -->
 
+	<!-- Main body content -->
+	<!-- Bootstrap Carousel begin -->
 	<div id="carousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="carousel" data-slide-to="0" class="active"></li>
@@ -97,170 +113,439 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
+	</div>		<!-- End Carousel -->
+
+	<!-- Twitter feed section -->
+	<div class="container" id="twitter-feed">
+   <a class="twitter-timeline"  href="https://twitter.com/search?q=women%20in%20tech" data-widget-id="796426865879617536">Tweets about women in tech</a>         
 	</div>
 
+	<!-- Content section: Inspiring women -->
 	<div class="container" id="inspire">
-		<h1 class="section-heading"> Inspiring Women in Tech</h1>
+		<h1 class="section-heading">Inspiring Women in Tech</h1>
 		<div class="container intro">
-			<p>We have selected a handful of the most inspiring women in the Tech Industry, who are not only <strong> GAMECHANGERS </strong> within their own roles/companies but are transforming the tech industry for the better and leading dramatic change in this digital age.<p>
+			<p>We have selected a handful of the most inspiring women in the Tech Industry, who are not only <strong> GAMECHANGERS </strong> within their own roles/companies but are transforming the tech industry for the better and leading dramatic change in this digital age.</p>
 			<ul> <strong>#InspringWomenInTech</strong></ul>	
 		</div>
-		<div class="container short-profile" id="person1">
-			<p class="pic"><img class="rnd-avatar img-circle pull-left" src="./images/sarahwood1.png"></p>
-			<div class="desc-left">
-				<h3 class="name">Sarah Wood</h3>
-				<ul>Role: Co-founder and CEO @ <a href="https://unruly.co/" target="_blank">Unruly</a></ul>
-				<ul>Twitter:  <a href="https://twitter.com/sarahfwood?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">@sarahfwood</a> LinkedIn: <a href="https://www.linkedin.com/in/sarahfwood" target="_blank">Sarahfwood</a></ul>
-			</div>
-		</div>
-		<div class="container short-profile" id="person2">
-			<p class="pic"><img class="rnd-avatar img-circle pull-right" src="./images/NancyCruickshank2.png"></p>
-			<div class="desc-right">
-				<h3 class="name">Nancy Cruickshank</h3>
-				<ul>Role: Founder and CEO @ <a href="https://www.myshowcase.com/" target="_blank">MYSHOWCASE</a></ul>
-				<ul>Twitter:  <a href="https://twitter.com/cruickshankn" target="_blank">@cruickshankn</a> LinkedIn: <a href="https://www.linkedin.com/in/cruickshankn" target="_blank">Cruickshankn</a></ul>
-			</div>
-		</div>
-		</div>
-		<div class="container short-profile" id="person3">
-			<p class="pic"><img class="rnd-avatar img-circle pull-left" src="./images/somayehaghnia3.png"></p>
-			<div class="desc-left">
-				<h3 class="name">Somayeh Aghnia</h3>
-				<ul>Role: Co-founder and Managing Director @ <a href="https://www.geeks.ltd.uk/" target="_blank">Geeks Ltd</a></ul>
-				<ul>Twitter:  <a href="https://twitter.com/somayeha?lang=en" target="_blank">@SomayehA</a> LinkedIn: <a href="https://www.linkedin.com/in/somayeh" target="_blank">Somayeh</a></ul>
-			</div>
-		</div>
-		<div class="container short-profile" id="person4">
-			<p class="pic"><img class="rnd-avatar img-circle pull-right" src="./images/alexamarenghi4.png"></p>
-			<div class="desc-right">
-				<h3 class="name">Alexa Marenghi</h3>
-				<ul>Role: Diversity Manager @ Microsoft and <a href="http://www.codess.net/" target="_blank">Codess Founder</a></ul>
-				<ul>Twitter:  <a href="https://twitter.com/alexa_glick" target="_blank">@alexa_glick</a> LinkedIn: <a href="https://www.linkedin.com/in/alexaglick" target="_blank">Alexaglick</a></ul>
-			</div>
-		</div>
-		<div class="container short-profile" id="person5">
-			<p class="pic"><img class="rnd-avatar img-circle pull-left" src="./images/jessielink5.png"></p>
-			<div class="desc-left">
-				<h3 class="name">Jessie Link</h3>
-				<ul>Role: Director of Engineering @ Twitter</ul>
-				<ul>Twitter:  <a href="https://twitter.com/mad_typist?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">@mad_typist</a> LinkedIn: <a href="https://www.linkedin.com/in/jessie-link-2a6ab546" target="_blank">Jessie-link</a></ul>
-			</div>
-		</div>
-		<div class="container short-profile" id="person6">
-			<p class="pic"><img class="rnd-avatar img-circle pull-right" src="./images/amalidealwis6.png"></p>
-			<div class="desc-right">
-				<h3 class="name">Amali de Alwis</h3>
-				<ul>Role: CEO @ <a href="http://www.codefirstgirls.org.uk/" target="_blank">Code First Girls</a></ul>
-				<ul>Twitter:  <a href="https://twitter.com/amali_d?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">@amali_d</a> LinkedIn: <a href="https://www.linkedin.com/in/amali" target="_blank">Amali</a></ul>
-			</div>
-		<div class="container well" id="poll-container">
-			<h3>Choose November's Woman of the Month</h3>
-			<p>{Write something inspiring about there being lots of women who have been successful in the tech industry. We've chosen 4/6/8 etc. above who we think are exceptional. Answer the poll below to vote for the person who's story has inspired you the most. Or something like that???}</p>
-			<div class="container">
-				<div class="radio text-left col-sm-offset-5 col-xs-offset-4">
-					<label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">Somebody McSomebody</label>
-				</div>
-				<div class="radio text-left col-sm-offset-5 col-xs-offset-4">
-					<label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option1">Another Somebody</label>
-				</div>
-				<div class="radio text-left col-sm-offset-5 col-xs-offset-4">
-					<label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option1">Awesome Person</label>
-				</div>
-				<div class="radio text-left col-sm-offset-5 col-xs-offset-4">
-					<label><input type="radio" name="optionsRadios" id="optionsRadios4" value="option1">Miss Super Successful</label>
-				</div>
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" value="">I would like to suggest someone for next month!
-					</label>
-				</div>
-				<input class="btn btn-default" type="submit" value="Submit">
-			</div>
-		</div>
-	</div>
-			
-	<div class="container" id="news">
-		<div class="container intro">
-			<p> NEWS</p>
-		</div>
-		<div class="container">
-	    <div class="container short-profile" id="news1">
-				<a href="#"><img class="rnd-avatar img-circle pull-left" src="http://ncmedia.azureedge.net/ncmedia/2015/04/Pip_Marlow_MSAU-small-1803x1200.jpg"></a>
-				<div class="desc-left">
-					<a href="http://www.techrepublic.com/article/how-women-in-tech-are-making-progress-in-australia-and-what-the-rest-of-the-world-can-learn/"></a>
-					<h3 class="name">How women in tech are making progress in Australia, and what the rest of the world can learn </h3>
-					<p> Some of Australia's leading tech companies-and divisions of large multinationals-are now led by women. Here's why it may offer 'a glimmer of hope' to one of tech's enduring challenges.</p>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-		  <div class="container short-profile" id="news2">
-				<a href="#"><img class= "rnd-avatar img-circle pull left" src="https://metrouk2.files.wordpress.com/2013/10/ay95895977ada-lovelace-engl.jpg"></a>
-				<div class="desc-left">
-					<a href="http://www.telegraph.co.uk/women/work/without-more-women-in-technology-the-year-2050-could-be-our-most/"></a>
-					<h3 class="name"> Without more women in technology, the year 2050 could be our most backward in a century </h3>
-					<p> Becky Plummer - Senior Software Engineer at Bloomberg </p>
-				</div>
-			</div>
-			
-			<div class="container">
-		  <div class="container short-profile" id="news3">
-				<a href="#"><img class= "rnd-avatar img-circle pull left" src="./images/BBC_Article.jpeg"></a>
-				<div class="desc-left">
-					<a href="http://www.bbc.co.uk/news/technology-37605943/"></a>
-					<h3 class="name"> What if there were more women in technology </h3>
-					<p> From gender-neutral bots to period-friendly healthcare trackers, cars with more storage and clothes with bigger pockets - the world could be a very different place if there were more women working in tech. </p>
-				</div>
-			</div>
-				
-				<div class="container">
-		  <div class="container short-profile" id="news4">
-				<a href="#"><img class= "rnd-avatar img-circle pull left" src="./images/lily.jpeg></a>
-				<div class="desc-left">
-					<a href="http://www.reuters.com/article/us-portugal-websummit-lily-cole-idUSKBN1332LT/"></a>
-					<h3 class="name"> Forget glamor, model Lily Cole wants tech for good to encourage woman, girls </h3>
-					
-				</div>
-			</div>
-			
-			
-				http://www.bbc.co.uk/news/technology-37605943
-			</p>
-		</div>
-	</div>
+		<div class="row"> 
+			<div class="col-sm-6 col-md-6"> 
+				<div class="thumbnail">
+					<img alt="sarahpic" src="./images/sarahwood1.png" data-holder-rendered="true"class="prof-pic">
+					<div class="caption"> 
+						<h3>Sarah Wood</h3>
+						<p>Role: Co-founder and CEO @ <a href="https://unruly.co/" target="_blank">Unruly</a></p>
+						<p>Twitter:  <a href="https://twitter.com/sarahfwood?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">@sarahfwood</a> LinkedIn: <a href="https://www.linkedin.com/in/sarahfwood" target="_blank">Sarahfwood</a></p>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+							Click here for Full Bio
+						</button>
 
+						<!-- Modal -->
+						<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<h4 class="modal-title" id="myModalLabel2">Sarah Wood</h4>
+									</div>
+									<div class="modal-body">
+										<p>Sarah Wood is co-founder and COO of marketing technology company Unruly, where she ensures the company delivers the most awesome social video campaigns on the planet. Campaigns Unruly has delivered include Evian Roller Babies, T-Mobile’s “Life’s For Sharing”, Dove Real Beauty Sketches and Three’s “#singitkitty”.</p>
+										<p>Unruly works with 83% of Ad Age 100 brands to algorithmically predict video shareability with Unruly ShareRank, distribute video content to 1.27 billion users across the Open Web with Unruly Activate and prove social ROI with Unruly Analytics, a cloud-based dashboard providing real-time competitive benchmarks. Unruly has 13 offices, employs 160 people and is backed by Amadeus Capital Partners, Van den Ende & Deitmers and British Growth Fund.</p>
+										<p>Sarah was named one of 15 Women to Watch in Tech by Inc., one of 10 London-Based Entrepreneurs to Watch by Forbes and one of CNBC’s UK tech industry’s top women entrepreneurs. Unruly has won 26 awards, including AOP’s UK Digital Advertising Operations Team of the Year 2014 and Hot New Media & Technological Platform by the International Media Image Survey.</p>
+										<p>In 2011, Sarah worked with the IAB to define social video as an accredited ad format. Sarah is also an associate lecturer at the University of Cambridge, where she teaches an MPhil course in online video culture. Sarah is fronting the Your Life steering group, a Government initiative designed to get more students to take Maths and Science between the ages of 16-18. She is also part of the Gazelle Group of Entrepreneurs, helping to foster a new generation of entrepreneurs.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div> 
+
+			<div class="col-sm-6 col-md-6">
+				<div class="thumbnail"> 
+					<img alt="nancypic"  src="./images/NancyCruickshank2.png" data-holder-rendered="true" class="prof-pic"> 
+					<div class="caption"> 
+						<h3>Nancy Cruickshank</h3>
+						<p>Role: Founder and CEO @  <a href="https://www.myshowcase.com/" target="_blank">MYSHOWCASE</a></p>
+						<p>Twitter:  <a href="https://twitter.com/cruickshankn" target="_blank">@cruickshankn</a> LinkedIn: <a href="https://www.linkedin.com/in/cruickshankn" target="_blank">Nancy Cruickshank</a></p>
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<h4 class="modal-title" id="myModalLabel2">Nancy Cruickshank</h4>
+									</div>
+									<div class="modal-body">
+										<p>Nancy is passionate about female entrepreneurship. Her latest start-up venture, MyShowcase, aims to reshape social selling in beauty for a new generation, bringing together a new concept in beauty retail via a network of entrepreneurial women.</p> 
+										<p>Starting out at Condé Nast Online, Nancy launched Vogue.com in the 90s and continued to progress in the media and tech sector through CEO and directorial roles at VideoJug, The Telegraph Media Group and Weve. As the founder of Handbag.com, Nancy worked in close collaboration with Barclays on the Women In Business programme; this together with Handbag.com’s active audience of 1.3 million women per month exposed the challenges faced by women wanting to start their own business. The company sold for £22 million in 2006, and enabled Nancy to found MyShowcase. In 2015, she was invited to Downing Street as one of the 50 Most Inspiring Women in European Tech.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+		<div class="row"> 
+			<div class="col-sm-6 col-md-6"> 
+				<div class="thumbnail">
+				<img alt="somayehpic"  src="./images/somayehaghnia3.png" data-holder-rendered="true" class="prof-pic">
+					<div class="caption"> 
+						<h3>Somayeh Aghnia</h3>
+						<p>Role: Co-founder and Managing Director @<a href="https://www.geeks.ltd.uk/" target="_blank">Geeks Ltd</a></p>
+						<p>Twitter:  <a href="https://twitter.com/somayeha?lang=en" target="_blank">@SomayehA</a> LinkedIn: <a href="https://www.linkedin.com/in/somayeh" target="_blank">Somayeh</a></p>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+							Click here for Full Bio
+						</button>
+						<!-- Modal -->
+						<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<h4 class="modal-title" id="myModalLabel3">Somayeh Aghnia</h4>
+									</div>
+									<div class="modal-body">
+										<p>Co-founder and Managing Director at Geeks Ltd, a successful, award winning and fast growing software house in south London with 80+ staff, and over 250 clients.</p>
+										<p>Somayeh is an experienced software engineer and project leader with a track record of delivering technically complex and challenging software projects, empowering and accelerating innovation in businesses.</p>
+										<p> With a passion for process improvement, Somayeh has been involved heavily in leading Geeks in all aspects over the past 8 years from winning local, national and international awards for innovation in technology and services, staff development and training.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>		<!-- End Modal -->
+					</div>
+				</div> 
+			</div>		<!-- End profile -->
+			<div class="col-sm-6 col-md-6">
+				<div class="thumbnail"> 
+					<img alt="alexapic"  src="./images/alexamarenghi4.png" data-holder-rendered="true" class="prof-pic"> 
+					<div class="caption"> 
+						<h3>Alexa Marenghi</h3>
+						<p>Role: Diversity Manager @ Microsoft and <a href="http://www.codess.net/" target="_blank">Codess Founder</a></p>
+						<p>Twitter:  <a href="https://twitter.com/alexa_glick" target="_blank">@alexa_glick</a> LinkedIn: <a href="https://www.linkedin.com/in/alexaglick" target="_blank">Alexaglick</a></p>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">
+							Click here for Full Bio
+						</button>
+						<!-- Modal -->
+						<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<h4 class="modal-title" id="myModalLabel4">Alexa Marenghi</h4>
+									</div>
+									<div class="modal-body">
+										<p>An innovative and strategic Program Manager with extensive experience managing Diversity initiatives and teams on a global scale. Alexa’s passion specifically lies within gender diversity in the engineering industry. She continues to be inspired by her role at Microsoft which has seen her build a global diversity strategy for hiring key diverse talent across the business.</p>
+										<p>After experiencing the alienation of being the only female student in her Computer Science classes, Alexa decided to start Codess in March 2013 – a community for female coders, sponsored by Microsoft.</p>
+										<p>Alexa created Codess to inspire Women to achieve their professional goals and continue advancing technically, whilst providing them a qualified network. Research confirms that technology companies with more Women in management have a 34% higher return on investments. Therefore Codess endeavors to change the future of the engineering profession by impacting the number of females visible at the leadership level. Since inception, Codess has grown into a global initiative with 40+ events servicing over 12 countries worldwide.
+											Through effective thought-leadership, Alexa has broadened the recognition of Microsoft as a diverse employer and built the Codess community.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>		<!-- End Modal -->
+					</div> 
+				</div>
+			</div>		<!-- End Profile -->
+		</div>		<!-- End row -->
+		<div class="row"> 
+			<div class="col-sm-6 col-md-6"> 
+				<div class="thumbnail">
+					<img alt="jessielinkpic" src="./images/jessielink5.png" data-holder-rendered="true" class="prof-pic">
+					<div class="caption"> 
+						<h3>Jessie Link</h3>
+						<ul>Role: Director of Engineering @ Twitter</ul>
+						<ul>Twitter:  <a href="https://twitter.com/mad_typist?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">@mad_typist</a> LinkedIn: <a href="https://www.linkedin.com/in/jessie-link-2a6ab546" target="_blank">Jessie-link</a></ul>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">
+							Click here for Full Bio
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<h4 class="modal-title" id="myModalLabel5">Jessie Link</h4>
+									</div>
+									<div class="modal-body">
+										<p>Jessie Link is a Director of Engineering at Twitter, currently heading up Engineering operations in the UK office. London is the largest engineering office in Twitter outside the US. She helps lead the TweetDeck team and the Live Video efforts there.</p>
+										<p>Jessie is passionate about building happy, self-organizing and high performing dev teams. Previous positions include engineering leadership roles at LivingSocial, Lookingglass Cyber Solutions and General Dynamics. She also served as a military officer in the U.S. Air Force. She holds a bachelors in computer science from Wellesley College and a masters in information systems from Hawaii Pacific University.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<div class="col-sm-6 col-md-6">
+				<div class="thumbnail"> 
+					<img class="responsive"  src="./images/amalidealwis6.png" data-holder-rendered="true" class="prof-pic"> 
+					<div class="caption"> 
+						<h3>Amali de Alwis</h3>
+						<ul>Role: CEO @ <a href="http://www.codefirstgirls.org.uk/" target="_blank">Code First Girls</a></ul>
+						<ul>Twitter:  <a href="https://twitter.com/amali_d?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">@amali_d</a> LinkedIn: <a href="https://www.linkedin.com/in/amali" target="_blank">Amali</a></ul>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6">
+							Click here for Full Bio
+						</button>
+						<!-- Modal -->
+						<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<h4 class="modal-title" id="myModalLabel6">Amali de Alwis</h4>
+									</div>
+									<div class="modal-body">
+										<p>Amali is the CEO of Code First:Girls, a social enterprise which works with companies and women to increase the proportions of women in tech and entrepreneurship.</p>
+										<p> She previously worked as a consultant at PwC, prior to which she was a senior research and strategy consultant at TNS Global. Outside of the day job, she is a small business mentor through Start-up direct, a Tech London Advocate, as well as a fellow at the RSA.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									</div>
+
+									<div id='social-buttons'>
+										<button class='btn btn-lg btn-twitter'>Twitter</button>
+										<button class='btn btn-lg btn-facebook'>Facebook</button>
+										<button class='btn btn-lg btn-pinterest'>Pinterest</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>        
+
+		<div class="container well" id="poll-container">
+			<h3>Who has inspired you?</h3>
+			<p>Suggest someone who has inspired you for the chance to be feautured on our website #InspiringWomenInTech</p>
+			<div class="input-group">
+				<input type="text" id="userComment" class="form-control input-sm chat-input" placeholder="Comment Here" />
+				<span class="input-group-btn" onclick="addComment()">     
+					<a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"></span> Submit</a>
+				</span>
+			</div>
+		</div>		<!-- End poll container -->
+	</div>		<!-- End Inspire section -->
+	
+	<!-- Content section: Getting Started -->
 	<div class="container" id="getStarted">
 		<div class="jumbotron">
 			<h1>Getting started with coding</h1>
 			<p>We've all been there, you want to try something new but there's so much information out there that you don't know where to start. But getting started with coding is actually really easy if you know where to look! So here at #WebsiteName, we've compiled some of our favourite resources to get you started in no time. Just click the button below to learn more.</p>
 			<a href="./getting_started.html" type="button" class="btn btn-default">Get coding!</a>
 		</div>
+	</div>		<!-- End Getting Started section -->
+
+	<!-- Content section: News -->
+	<div class="container" id="news">
+		<hr>
+		<div class="container intro">
+			<h1 class="section-heading"> NEWS</h1>
+		</div>
+		<div class="container">
+
+	    <div class="container short-profile" id="news1">
+				<a href="http://www.techrepublic.com/article/how-women-in-tech-are-making-progress-in-australia-and-what-the-rest-of-the-world-can-learn/"><img class="rnd-avatar img-circle pull-left" src="http://ncmedia.azureedge.net/ncmedia/2015/04/Pip_Marlow_MSAU-small-1803x1200.jpg"></a>
+				<div class="desc-left">
+					<h3 class="name">How women in tech are making progress in Australia, and what the rest of the world can learn </h3>
+					<p> Some of Australia's leading tech companies-and divisions of large multinationals-are now led by women. Here's why it may offer 'a glimmer of hope' to one of tech's enduring challenges.</p>
+				</div>
+			</div>
+
+		  <div class="container short-profile" id="news2">
+				<a href="http://www.telegraph.co.uk/women/work/without-more-women-in-technology-the-year-2050-could-be-our-most"><img class= "rnd-avatar img-circle pull-left" src="https://metrouk2.files.wordpress.com/2013/10/ay95895977ada-lovelace-engl.jpg"></a>
+				<div class="desc-left">
+					<h3 class="name"> Without more women in technology, the year 2050 could be our most backward in a century </h3>
+					<p> Becky Plummer - Senior Software Engineer at Bloomberg </p>
+				</div>
+			</div>
+			
+		  <div class="container short-profile" id="news3">
+				<a href="http://www.bbc.co.uk/news/technology-37605943/"><img class= "rnd-avatar img-circle pull-left" src="./images/BBC_Article.jpg"></a>
+				<div class="desc-left">
+					<h3 class="name"> What if there were more women in technology </h3>
+					<p> From gender-neutral bots to period-friendly healthcare trackers, cars with more storage and clothes with bigger pockets - the world could be a very different place if there were more women working in tech. </p>
+				</div>
+			</div>
+				
+		  <div class="container short-profile" id="news4">
+				<a href="http://www.reuters.com/article/us-portugal-websummit-lily-cole-idUSKBN1332LT/"><img class= "rnd-avatar img-circle pull-left" src="./images/lily.jpg"></a>
+				<div class="desc-left">
+					<h3 class="name"> Forget glamor, model Lily Cole wants tech for good to encourage woman, girls </h3>
+					<p> As a British supermodel and actress, Lily Cole has lived a life of glamor, but it is her new role as a social entrepreneur using technology to do good that she hopes will inspire women. </p>	
+				</div>
+			</div>
+			<hr>
+		</div>
 	</div>
 
+	<!-- Content section: Events -->
 	<div class="container" id="events">
 		<h1>Upcoming Events</h1>
 		<div class="November event">
 			<p class="full-width">Intro to Coding <span class="date">13th November</span><br />
-			<small>Perfect for beginners. A class to outline the basics in coding to help you get started. </small></p>
+				<small>Perfect for beginners. A class to outline the basics in coding to help you get started. </small>
+			</p>
 		</div>
 		<div class="December event">
 			<p class="full-width">Networking Dinner <span class="date">9th December</span><br />
-			<small>Fantastic opportunity to meet other people with an interest in tech</small></p>
+				<small>Fantastic opportunity to meet other people with an interest in tech</small>
+			</p>
 		</div>
 		<div class="January event">
 			<p class="full-width">1st Annual Women in Tech Conference London <span class="date">22nd January</span><br />
-			<small>Hear from industry leaders about trends in the tech and have the opportunity to network with people from all areas of the sector.</small></p>
+				<small>Hear from industry leaders about trends in the tech and have the opportunity to network with people from all areas of the sector.</small>
+			</p>
 		</div>
-		<div id='social-buttons'>
-      <button class='btn btn-lg btn-twitter'>Twitter</button>
-      <button class='btn btn-lg btn-facebook'>Facebook</button>
-      <button class='btn btn-lg btn-pinterest'>Pinterest</button>
-    </div>
-  </div>
-</div>
+		<h3>Map</h3>
+  	<div id="map"></div>
+	</div>		<!-- End Events section -->
+
+
+
+	<!-- Content section: Subscribe -->
+	<div class="container" id="subscribe">
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Thank You</h4>
+		      </div>
+		      <div class="modal-body">
+		        Womenology will be in touch!
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<hr>
+
+		<form>
+			<div class="form-group Spacediv">
+	  	  <label for="exampleInputFirstName">First Name</label>
+	    	<input type="FirstName" class="form-control" id="exampleInputFirstName" placeholder="FirstName">
+	  	</div>
+		  <div class="form-group Spacediv">
+		    <label for="exampleInputLastName">Last Name</label>
+		    <input type="Last Name" class="form-control" id="exampleInputLastName" placeholder="LastName">
+		  </div>
+		  <div class="form-group Spacediv">
+		    <label for="exampleInputEmail1">Email address</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+		  </div>
+
+	  	<div class="checkbox Spacediv">
+	    	<label>
+	    		<center><input type="checkbox">Subscribe to keep up with Womenology</center>
+	    	</label>
+	  	</div>
+	 
+	  	<div class="form-group Spacediv">
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Submit</button>
+	  	</div>
+	  </form>
+
+	  <hr>
+
+		<!-- Social buttons -->
+<!--		<div id='social-buttons' class="container">   
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-square-o fa-stack-2x"></i>
+			  <i class="fa fa-twitter fa-stack-1x"></i>
+			</span>
+			 <span class="fa-stack fa-lg">
+			  <i class="fa fa-square-o fa-stack-2x"></i>
+			  <i class="fa fa-facebook fa-stack-1x"></i>
+			</span>
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-square-o fa-stack-2x"></i>
+			  <i class="fa fa-linkedin fa-stack-1x"></i>
+			</span>
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-square-o fa-stack-2x"></i>
+			  <i class="fa fa-pintrest fa-stack-1x"></i>
+			</span>
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-square-o fa-stack-2x"></i>
+			  <i class="fa fa-instagram fa-stack-1x"></i>
+			</span>
+		</div> -->
+  </div>		<!-- Section end -->
+
+	<!-- Bootstrap sticky footer -->
+	<div class="footer">
+		<div id='social-buttons' class="container">   
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-square-o fa-stack-2x"></i>
+			  <i class="fa fa-twitter fa-stack-1x"></i>
+			</span>
+			 <span class="fa-stack fa-lg">
+			  <i class="fa fa-square-o fa-stack-2x"></i>
+			  <i class="fa fa-facebook fa-stack-1x"></i>
+			</span>
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-square-o fa-stack-2x"></i>
+			  <i class="fa fa-linkedin fa-stack-1x"></i>
+			</span>
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-square-o fa-stack-2x"></i>
+			  <i class="fa fa-pintrest fa-stack-1x"></i>
+			</span>
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-square-o fa-stack-2x"></i>
+			  <i class="fa fa-instagram fa-stack-1x"></i>
+			</span>
+		</div>
+		<p class="text-muted">&#169; 2016 Womenology All Rights Reserved</p>
+	</div>		<!-- End footer-->
 
 	<!-- Latest minified jquery CDN -->
 	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified Bootstrap JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Script required for Twitter feed API -->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<!-- Link to Google maps API -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5Iwp5_1F7v4dkW8S8OIo2rxUssamw4A8&callback=initMap"></script>
+	<!-- Link to custom javascript file for map -->
+	<script type="text/javascript" src="./js/map.js"></script>
 </body>
