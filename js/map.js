@@ -1,9 +1,9 @@
 function initMap() {
 
     var items = [
-      { position: { lat: 51.5154, lng: -0.0700 }, label: "Intro to coding" },
-      { position: { lat: 51.5275, lng: -0.0700 }, label: "Second" },
-      { position: { lat: 51.5396, lng: -0.0700 }, label: "Third" }
+      { position: { lat: 51.5154, lng: -0.1200 }, label: "Intro to coding" },
+      { position: { lat: 51.5275, lng: -0.0700 }, label: "Conference" },
+      { position: { lat: 51.5396, lng: -0.0300 }, label: "Networking Dinner" }
     ];
 
     var closeAll = function() {
@@ -14,7 +14,7 @@ function initMap() {
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 12,
-      center: {lat: 51.4850, lng: -0.1200}
+      center: {lat: 51.5275, lng: -0.0700}
     });
 
     items.forEach(function(item) {
